@@ -4,7 +4,6 @@ import "./App.css";
 
 export default function App() {
   return (
-    <body>
       <div className="container">
         <div className="content first-content">
           <div className="first-column">
@@ -126,6 +125,5 @@ export default function App() {
         </div>
         {/*second-content*/}
       </div>
-    </body>
   );
 }
