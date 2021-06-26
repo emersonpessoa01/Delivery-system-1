@@ -21,6 +21,7 @@ const handleSubmit = (user) => {
 const initialValues = {};
 
 const App = () => {
+return(
   <div className="App">
     <Main>
       const validations = yup.object().shape({
@@ -35,7 +36,7 @@ const App = () => {
          .required("Campo obrigatório"),
       });
 
-   return (
+   
     <Formik
       initialValues={initialValues}
       onSubmit={handleSubmit}
@@ -96,6 +97,6 @@ const App = () => {
 */}
     </Main>
   </div>
-};
+)};
 
 export default App;
