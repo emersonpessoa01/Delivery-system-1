@@ -18,10 +18,10 @@ const App = () => {
 
 const initialValues={}
 
-const handleSubmit = () => {
+const handleSubmit = (user) => {
   setTimeout(() => {
     console.log(user);
-    alert(JSON.stringify(initialValues))
+    alert(JSON.stringify(user))
 
   }, 500);
 };
