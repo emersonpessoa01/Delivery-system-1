@@ -26,10 +26,10 @@ password:""
 }
 
 
-const handleSubmit = (user) => {
+const handleSubmit = () => {
   setTimeout(() => {
-    console.log(user);
-    alert(JSON.stringify(user));
+    console.log(initialValues);
+    alert(JSON.stringify(initialValues));
   }, 500);
 };
 
