@@ -83,8 +83,8 @@ return(
             name="password"
             placeholder="senha"
             type="password"
-            value={name}
-            onChange={(e)=>setName(e.target.value)}
+            value={password}
+            onChange={(e)=>setPassword(e.target.value)}
           />
           <ErrorMessage
             className="Form-Error"
