@@ -12,6 +12,10 @@ import { ErrorMessage, Formik, Form as FormikForm, Field } from "formik";
 import "./App.css";
 import Main from "./components/form/Main";
 
+
+
+const App = () => {
+
 const handleSubmit = (user) => {
   setTimeout(() => {
     console.log(user);
@@ -25,7 +29,6 @@ const validations = yup.object().shape({name: yup.string().min(2, "o nome deve t
 user: yup.string().email("o usuário deve ser um email válido").required("Campo obrigatório"),password: yup.string().min(8, "A senha deve conter pelo menos 8 caracteres").required("Campo obrigatório"),});
 
 
-const App = () => {
 return(
   <div className="App">
     <Main>  
