@@ -23,10 +23,10 @@ password:""
 
 const valueInput=(e)=>setData(...data, [e.target.name]:e.target.value
 
-const handleSubmit = (user) => {
+const handleSubmit = () => {
   setTimeout(() => {
-    console.log(user);
-    alert(JSON.stringify(user));
+    console.log(data);
+    alert(JSON.stringify(data));
   }, 500);
 };
 
