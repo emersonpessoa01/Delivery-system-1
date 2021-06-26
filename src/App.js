@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import * as yup from "yup";
 
 //import PropTypes from "prop-types";
@@ -15,6 +15,13 @@ import Main from "./components/form/Main";
 
 
 const App = () => {
+const [data, setData] = useState({
+name:"",
+user:"",
+password:""
+})
+
+const valueInput=(e)=>setData(...data, [e.target.name]:e.target.value
 
 const handleSubmit = (user) => {
   setTimeout(() => {
@@ -22,8 +29,7 @@ const handleSubmit = (user) => {
     alert(JSON.stringify(user));
   }, 500);
 };
-const initialValues = {};
-alert(JSON.stringify(initialValues))
+
 
 const validations = yup.object().shape({name: yup.string().min(2, "o nome deve ter pelo menos 2 caracteres").required("Campo obrigatório"),
 user: yup.string().email("o usuário deve ser um email válido").required("Campo obrigatório"),password: yup.string().min(8, "A senha deve conter pelo menos 8 caracteres").required("Campo obrigatório"),});
@@ -33,7 +39,7 @@ return(
   <div className="App">
     <Main>  
     <Formik
-      initialValues={initialValues}
+      initialValues={data}
       onSubmit={handleSubmit}
       validationSchema={validations}
     >
@@ -50,6 +56,7 @@ return(
             name="name"
             placeholder="nome"
             type="text"
+            onChange={valueInput}
           />
           <ErrorMessage className="Form-Error" component="span" name="name" />
         </div>
@@ -60,6 +67,7 @@ return(
             name="user"
             placeholder="usuário@example.com"
             type="text"
+            onChange={valueInput}
           />
           <ErrorMessage className="Form-Error" component="span" name="user" />
         </div>
@@ -70,6 +78,7 @@ return(
             name="password"
             placeholder="senha"
             type="password"
+            onChange={valueInput}
           />
           <ErrorMessage
             className="Form-Error"
