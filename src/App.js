@@ -91,11 +91,11 @@ const App = () => (
   );
 };
 
-/*Form.propTypes = {
+{/*Form.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   initialValues: PropTypes.object.isRequired,
 };
-*/
+*/}
     </Main>
   </div>
 );
