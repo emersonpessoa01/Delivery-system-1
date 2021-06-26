@@ -22,8 +22,8 @@ const handleSubmit = (e) => {
   e.preventDefault()
 
   setTimeout(() => {
-    console.log(initialValues);
-    alert(JSON.stringify(initialValues))
+    console.log({initialValues});
+    alert(JSON.stringify({initialValues}))
 
   }, 500);
 };
