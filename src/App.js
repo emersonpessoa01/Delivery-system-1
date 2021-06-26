@@ -1,4 +1,10 @@
 import React from "react";
+import * as yup from "yup";
+
+//import PropTypes from "prop-types";
+
+import { ErrorMessage, Formik, Form as FormikForm, Field } from "formik";
+
 
 import Form from "./components/form";
 Import "./Components/Foram.css
