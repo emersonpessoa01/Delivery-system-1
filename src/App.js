@@ -19,8 +19,6 @@ const App = () => {
 const initialValues={}
 
 const handleSubmit = (user) => {
-  e.preventDefault()
-
   setTimeout(() => {
     console.log(user);
     alert(JSON.stringify(user))
