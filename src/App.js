@@ -6,8 +6,8 @@ import * as yup from "yup";
 import { ErrorMessage, Formik, Form as FormikForm, Field } from "formik";
 
 
-import Form from "./components/form";
-Import "./Components/Foram.css
+//import Form from "./components/form";
+Import "./Components/Form.css
 
 import "./App.css";
 import Main from "./components/form/Main";
