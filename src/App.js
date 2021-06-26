@@ -19,11 +19,7 @@ const [name, setName] = useState("")
 const [user, setUser] = useState("")
 const [password, setPassword] = useState("")
 
-const initialValues={
-name:"",
-user:"",
-password:""
-}
+const initialValues={}
 
 
 const handleSubmit = () => {
