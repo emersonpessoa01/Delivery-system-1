@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import * as yup from "yup";
 
 //import PropTypes from "prop-types";
@@ -15,20 +15,14 @@ import Main from "./components/form/Main";
 
 
 const App = () => {
-const [data, setData]=>({
-name:"",
-user: "",
-password:""
-})
-
-const valueInput=()=>setData({...data, [e.target.name]:e.target.value})
 
 const initialValues={}
 
 const handleSubmit = (user) => {
   setTimeout(() => {
     console.log(user);
-    alert(JSON.stringify(user));
+    alert(JSON.stringify(user))
+
   }, 500);
 };
 
@@ -58,7 +52,6 @@ return(
             name="name"
             placeholder="nome"
             type="text"
-            onChange={valueInput}
           />
           <ErrorMessage className="Form-Error" component="span" name="name" />
         </div>
@@ -69,7 +62,6 @@ return(
             name="user"
             placeholder="usuário@example.com"
             type="text"
-            onChange={valueInput}
           />
           <ErrorMessage className="Form-Error" component="span" name="user" />
         </div>
@@ -80,7 +72,6 @@ return(
             name="password"
             placeholder="senha"
             type="password"
-            onChange={valueInput}
           />
           <ErrorMessage
             className="Form-Error"
