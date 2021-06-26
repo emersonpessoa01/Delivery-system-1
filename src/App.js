@@ -16,9 +16,9 @@ import Main from "./components/form/Main";
 
 const App = () => {
 
-const initialValues={}
-
 const handleSubmit = (user) => {
+  const initialValues={}
+
   setTimeout(() => {
     console.log(user);
     alert(JSON.stringify(user))
