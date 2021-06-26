@@ -35,7 +35,7 @@ const App = () => (
          .required("Campo obrigatório"),
       });
 
-  Const Form = () => {
+  const Form = () => {
    return (
     <Formik
       initialValues={initialValues}
