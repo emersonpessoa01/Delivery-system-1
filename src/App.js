@@ -25,11 +25,8 @@ const App = () => {
 return(
   <div className="App">
     <Main>
-      const validations = yup.object().shape({
-name: yup.string().min(2, "o nome deve ter pelo menos 2 caracteres").required("Campo obrigatório"),
-user: yup.string().email("o usuário deve ser um email válido").required("Campo obrigatório"),
-password: yup.string().min(8, "A senha deve conter pelo menos 8 caracteres").required("Campo obrigatório"),
-});
+      const validations = yup.object().shape({name: yup.string().min(2, "o nome deve ter pelo menos 2 caracteres").required("Campo obrigatório"),
+user: yup.string().email("o usuário deve ser um email válido").required("Campo obrigatório"),password: yup.string().min(8, "A senha deve conter pelo menos 8 caracteres").required("Campo obrigatório"),});
 
    
     <Formik
