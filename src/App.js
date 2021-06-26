@@ -80,7 +80,7 @@ return(
         </button>
       </FormikForm>
     </Formik>
-  );
+  
 
 {/*Form.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
