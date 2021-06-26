@@ -15,18 +15,21 @@ import Main from "./components/form/Main";
 
 
 const App = () => {
-const [data, setData] = useState({
+const [name, setName] = useState("")
+const [user, setUser] = useState("")
+const [password, setPassword] = useState("")
+
+const initialValues={
 name:"",
 user:"",
 password:""
-})
+}
 
-const valueInput=(e)=>setData(...data, [e.target.name]:e.target.value
 
-const handleSubmit = () => {
+const handleSubmit = (user) => {
   setTimeout(() => {
-    console.log(data);
-    alert(JSON.stringify(data));
+    console.log(user);
+    alert(JSON.stringify(user));
   }, 500);
 };
 
@@ -39,7 +42,7 @@ return(
   <div className="App">
     <Main>  
     <Formik
-      initialValues={data}
+      initialValues={initialValues}
       onSubmit={handleSubmit}
       validationSchema={validations}
     >
@@ -56,7 +59,8 @@ return(
             name="name"
             placeholder="nome"
             type="text"
-            onChange={valueInput}
+            value={name}
+            onChange={(e)=>setName(E.target.value)}
           />
           <ErrorMessage className="Form-Error" component="span" name="name" />
         </div>
@@ -67,7 +71,8 @@ return(
             name="user"
             placeholder="usuário@example.com"
             type="text"
-            onChange={valueInput}
+            value={user}
+            onChange={(e)=>setUser(E.target.value)}
           />
           <ErrorMessage className="Form-Error" component="span" name="user" />
         </div>
@@ -78,7 +83,8 @@ return(
             name="password"
             placeholder="senha"
             type="password"
-            onChange={valueInput}
+            value={name}
+            onChange={(e)=>setName(E.target.value)}
           />
           <ErrorMessage
             className="Form-Error"
