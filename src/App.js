@@ -16,12 +16,16 @@ import Main from "./components/form/Main";
 
 const App = () => {
 
-const handleSubmit = (user) => {
-  const initialValues={}
+const handleSubmit = () => {
+  const initialValues={
+  name,
+  user,
+  password
+}
 
   setTimeout(() => {
     console.log(user);
-    alert(JSON.stringify(user))
+    alert(JSON.stringify(initialValues))
 
   }, 500);
 };
