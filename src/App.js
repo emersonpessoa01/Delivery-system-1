@@ -15,17 +15,20 @@ import Main from "./components/form/Main";
 
 
 const App = () => {
-const [name, setName] = useState("")
-const [user, setUser] = useState("")
-const [password, setPassword] = useState("")
+const [data, setData]=>({
+name:"",
+user: "",
+password:""
+})
+
+const valueInput=()=>setData({...data, [e.target.name]:e.target.value})
 
 const initialValues={}
 
-
-const handleSubmit = () => {
+const handleSubmit = (user) => {
   setTimeout(() => {
-    console.log(initialValues);
-    alert(JSON.stringify(initialValues));
+    console.log(user);
+    alert(JSON.stringify(user));
   }, 500);
 };
 
@@ -55,8 +58,7 @@ return(
             name="name"
             placeholder="nome"
             type="text"
-            value={name}
-            onChange={(e)=>setName(e.target.value)}
+            onChange={valueInput}
           />
           <ErrorMessage className="Form-Error" component="span" name="name" />
         </div>
@@ -67,8 +69,7 @@ return(
             name="user"
             placeholder="usuário@example.com"
             type="text"
-            value={user}
-            onChange={(e)=>setUser(e.target.value)}
+            onChange={valueInput}
           />
           <ErrorMessage className="Form-Error" component="span" name="user" />
         </div>
@@ -79,8 +80,7 @@ return(
             name="password"
             placeholder="senha"
             type="password"
-            value={password}
-            onChange={(e)=>setPassword(e.target.value)}
+            onChange={valueInput}
           />
           <ErrorMessage
             className="Form-Error"
