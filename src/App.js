@@ -60,7 +60,7 @@ return(
             placeholder="nome"
             type="text"
             value={name}
-            onChange={(e)=>setName(E.target.value)}
+            onChange={(e)=>setName(e.target.value)}
           />
           <ErrorMessage className="Form-Error" component="span" name="name" />
         </div>
@@ -72,7 +72,7 @@ return(
             placeholder="usuário@example.com"
             type="text"
             value={user}
-            onChange={(e)=>setUser(E.target.value)}
+            onChange={(e)=>setUser(e.target.value)}
           />
           <ErrorMessage className="Form-Error" component="span" name="user" />
         </div>
@@ -84,7 +84,7 @@ return(
             placeholder="senha"
             type="password"
             value={name}
-            onChange={(e)=>setName(E.target.value)}
+            onChange={(e)=>setName(e.target.value)}
           />
           <ErrorMessage
             className="Form-Error"
