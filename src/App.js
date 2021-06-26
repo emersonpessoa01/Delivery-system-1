@@ -7,7 +7,7 @@ import { ErrorMessage, Formik, Form as FormikForm, Field } from "formik";
 
 
 //import Form from "./components/form";
-Import "./Components/form/Form.css
+Import "../../form/Form.css
 
 import "./App.css";
 import Main from "./components/form/Main";
