@@ -20,7 +20,7 @@ const handleSubmit = (user) => {
 };
 const initialValues = {};
 
-const App = () => (
+const App = () => {
   <div className="App">
     <Main>
       const validations = yup.object().shape({
@@ -35,7 +35,6 @@ const App = () => (
          .required("Campo obrigatório"),
       });
 
-  const Form = () => {
    return (
     <Formik
       initialValues={initialValues}
@@ -89,7 +88,6 @@ const App = () => (
       </FormikForm>
     </Formik>
   );
-};
 
 {/*Form.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
@@ -98,6 +96,6 @@ const App = () => (
 */}
     </Main>
   </div>
-);
+};
 
 export default App;
