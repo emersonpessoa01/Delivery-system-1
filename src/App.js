@@ -19,6 +19,7 @@ const handleSubmit = (user) => {
   }, 500);
 };
 const initialValues = {};
+alert(JSON.stringify(initialValues))
 
 const App = () => {
 return(
