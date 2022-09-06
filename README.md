@@ -1,5 +1,6 @@
-### Preview: [Login-formik](https://login-formik.vercel.app/)
+### Preview: [Login-formik](https://delivery-system-2.vercel.app/)
 
+<!--
 ### <u>Descrição</u>:
 #### Esta aplicação consiste basicamente em criar um sistema de entrega de produtos. Onde apresente as seguintes funcionalidades:<br>
 #### 1) Formulário:
@@ -21,3 +22,4 @@
 * Listagem de todos pedidos que foram realizados;<br>
 * Alterar status como: finalizar entrega, preparando e etc.<br>
 <hr>
+-->
